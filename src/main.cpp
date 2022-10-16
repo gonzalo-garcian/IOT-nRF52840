@@ -20,7 +20,7 @@ BLEService               ledService           = BLEService("19b10000e8f2537e4f6c
 
 // create switch characteristic
 //uid , propiedades, tamaño valor enviado/recibido
-BLECharacteristic switchCharacteristic = BLECharacteristic("DATOS IA", BLERead | BLEWrite, 20);
+BLECharacteristic switchCharacteristic = BLECharacteristic("19b10000e8f2537e4f6cd104768a1214", BLERead | BLEWrite, 20);
 void setup() {
   Serial.begin(9600);
 #if defined (__AVR_ATmega32U4__)
